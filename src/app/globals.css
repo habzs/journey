@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 64px;
+
+  --foreground-rgb: 30, 41, 59;
+  /* --foreground-rgb: 0, 0, 0; */
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-mh1 sm:text-h1 font-bold;
+  }
+  h2 {
+    @apply text-h4 sm:text-h2 font-bold;
+  }
+  h3 {
+    @apply text-h5 sm:text-h3 font-bold;
+  }
+  h4 {
+    @apply text-lg sm:text-h4 font-bold;
+  }
+  h5 {
+    @apply text-s2 sm:text-h5 font-bold;
+  }
+}
+
+@layer utilities {
+  .opportunity-header-mask {
+    mask: linear-gradient(to top, transparent, black 7%);
+  }
+}
+
+.carousel {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-size-sm: 50%;
+  --slide-size-md: 43%;
+  --slide-size-lg: 33%;
+  --slide-size-xl: 25%;
+}
