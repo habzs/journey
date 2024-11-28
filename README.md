@@ -114,7 +114,7 @@ journey/
 - Passwords are hashed and salted
 - Role-based access control implemented
 - HTTPS enforced
-- 
+  
 ## 📊 Performance
 - Optimized server-side rendering
 - Lazy loading of components
